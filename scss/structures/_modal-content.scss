@@ -1,0 +1,150 @@
+.modal {
+	//default h2 Look
+	h2 {
+			font-family: "Filson" ,sans-serif;
+			text-transform: uppercase;
+			font-size: 4.3rem;
+			margin: 0;
+			@include susy-media (max-width 1488px) {
+				font-size: 3vw;
+			}
+		}
+	&-content {
+		 @include container;
+		position: relative;
+		//override base h2
+		h2 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50% , -50%);
+			width: 100%;
+			text-align: center;
+			color: #fff;
+			@include susy-media (max-width 780px) {
+				font-size: 20px;
+			}
+		}
+		img {
+			float: right;
+			width: 66.1017%;
+			margin-right: 0;
+			// transition: all 0.5s ease-in-out 0s;
+			// -ms-transition: all 0.5s ease-in-out 0s;
+			@include susy-media (max-width 1020px) {
+				float: none;
+				margin-right: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	&-title {
+			background-image: url('../images/modalTitleBG.jpg');
+			background-repeat: no-repeat;
+			@include aspect-ratio(480,230);
+
+			background-size: 100%;
+			margin-bottom: 20px;
+			@include susy-media (max-width 1020px) {
+				&:before {
+					padding: 40px;
+					margin-top:20px;
+
+				}
+			}
+			h2 {
+				padding: 20px;
+			}
+
+	}
+	&-text {
+		//@include aspect-ratio(480,606);
+			float: left;
+			margin-right: 1.5%;
+			width: 32.2034%;
+			// transition: all 0.5s ease-in-out 0s;
+			// -ms-transition: all 0.5s ease-in-out 0s;
+			@include susy-media (max-width 1020px) {
+				float: none;
+				margin-right: 0;
+				width: 100%;
+			}
+	}
+	&-text-content {
+		background-color:#bcbdc0;
+		@include aspect-ratio(480,355);
+		overflow-y: auto;
+		p {
+			font-size: 1.4rem;
+			&.small {
+				font-size: 1rem;
+			}
+		}
+		dl {
+			dd {
+				font-size: 1rem;
+				margin: 0;
+			}
+		}
+		@include susy-media (max-width 1020px) {
+				&:before {
+					display: none;
+					content: "";
+					width: 100%;
+					padding: 40px;
+				}
+
+		}
+	}
+	&-text-wrapper {
+
+		position: absolute;
+		top: 0;
+		margin: 12% 9%;
+		@include susy-media (max-width 1020px) {
+			position:relative;
+			margin: 20px;
+		}
+	}
+	&-related {
+		@include container;
+		margin-top: 20px;
+
+		h2 {
+			@include span(4 of 12);
+			background-color: #1285bb;
+			padding:1.5%;
+			text-align: right;
+			color: #6ca0cb;
+			@include susy-media (max-width 780px) {
+				@include span(12 of 12);
+				padding: 10px 25px;
+				font-size: 2rem;
+				margin-bottom: 20px;
+				text-align: left;
+			}
+			// @include susy-media (max-width 480px) {
+			// 	font-size: 3rem;
+			// 	//@include span(12 of 12 last)
+			// 	margin-bottom: 20px;
+			// 	text-align: left;
+			// 	padding:25px 40px;
+			// }
+
+		}
+		img {
+			@include span(1 of 12);
+			height: auto;
+			@include susy-media (max-width 780px) {
+				@include span(2 of 12);
+			}
+			@include susy-media (max-width 480px) {
+				//@include span(3 of 12);
+			}
+		}
+	}
+
+
+}
+

@@ -1,0 +1,15 @@
+.header {
+	@include clearfix();
+	position: relative;
+	margin-bottom: 20px;
+	z-index: 20;
+
+	a {
+		@include susy-media (max-width 450px) {
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}

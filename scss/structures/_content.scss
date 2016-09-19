@@ -1,0 +1,99 @@
+.content {
+	 @include container;
+}
+	//using quatity quesries to style either 50% or thirds
+	.column {
+		@include clearfix();
+
+		// @include quantity-query(2,equal) {
+		// 	 @include span(6);
+		// }
+
+		// @include quantity-query(3,equal) {
+		// 	 @include span(4);
+		// }
+
+		&-two {
+			.column-left {
+				@include span(6);
+			}
+			.column-right {
+				@include span(6 last);
+			}
+				@include susy-media (max-width 860px) {
+					.column-left {
+						@include span(12);
+					}
+					.column-right {
+						@include span(12 last);
+					}
+				}
+			img {
+				@include quantity-query(2,equal) {
+					width: 98.2%;
+					float: none;
+					max-width: 100%;
+					margin: 0 0 20px 0;
+				}
+			}
+		}
+		&-three {
+
+			.column-left {
+				@include span(4);
+			}
+			.column-middle {
+				@include span(4);
+			}
+			.column-right {
+				@include span(4 last);
+				margin: 0;
+			}
+
+			@include susy-media (max-width 860px) {
+				.column-left {
+					@include span(12);
+				}
+				.column-middle {
+					@include span(12);
+				}
+				.column-right {
+					@include span(12 last);
+					margin: 0;
+				}
+
+			}
+			img { width: 100%;
+				@include quantity-query(3,equal) {
+
+					&.img-square {
+						@include span(2 of 4);
+					}
+					&.img-square-large {
+						@include span(4 of 4 last);
+					}&:nth-child(2) {
+						margin: 0;
+					}
+				}
+
+			}
+
+
+		}
+
+		img {
+			cursor: pointer;
+			//width: 100%;
+    		float: left;
+			margin-bottom: 20px;
+			&:nth-child(2n) {
+				margin-right: 0;
+			}
+
+		}
+		&.column-last {
+			margin: 0;
+		}
+	}
+
+

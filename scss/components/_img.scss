@@ -1,0 +1,19 @@
+.img {
+
+	&-square,
+	&-rectangle-tall,
+	&-rectangle-tall,
+	&-rectangle-large {
+		max-width: 230px;
+		//padding: 10px;
+		 @include span(2 of 6);
+	}
+	&-square-large,
+	&-rectangle {
+		max-width: 480px;
+		//padding: 10px;
+			 @include span(4 of 6);
+	}
+
+
+}

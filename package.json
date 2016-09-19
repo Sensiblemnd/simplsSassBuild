@@ -1,0 +1,26 @@
+{
+  "name": "simplsSassBuild",
+  "version": "1.0.0",
+  "description": "Angular weather app",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.14.3",
+    "gulp": "~3.9.1",
+    "gulp-autoprefixer": "~3.1.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-if": "~2.0.1",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "~1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rob Lloveras",
+  "licenses": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sensiblemnd/simplsSassBuild.git"
+  }
+}

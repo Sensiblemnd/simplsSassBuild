@@ -1,0 +1,15 @@
+.main {
+	padding: 25px 60px 60px;
+	max-width: 1600px;
+	margin: 0 auto;
+	transition: padding 0.5s ease-in-out 0s;
+	-ms-transition: padding 0.5s ease-in-out 0s;
+	position: relative;
+
+	@include susy-media (max-width 780px) {
+		padding: 20px;
+	}
+}
+section {
+	position:relative;
+}
