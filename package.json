@@ -1,7 +1,7 @@
 {
   "name": "simplsSassBuild",
   "version": "1.0.0",
-  "description": "Angular weather app",
+  "description": "simple saas build",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
